@@ -8,8 +8,6 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'aws-sdk', '~> 2.2', '>= 2.2.14'
-gem "fog", "~>1.20", require: "fog/aws/storage"
 gem "asset_sync"
 
 group :development, :test do
