@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if (IE 9)]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
+<head>
+
+<!-- Meta Tags -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Andy Mental</title>
+
+<meta name="description" content="Andy Mental | I go beyond radical, beyond extreme and with balls out in danger. I am not sure if I am looking for perfection or skill or all of that combined however I am going just down right Gnar" />
+
+<!-- Mobile Specifics -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="MobileOptimized" content="320"/>
+
+<!-- Mobile Internet Explorer ClearType Technology -->
+<!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/2.3.0/css/bootstrap.min.css">
+
+<!-- Main Style -->
+<%= stylesheet_link_tag "main" %>
+
+<!-- Supersized -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.supersized/3.2.7/flickr/css/supersized.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.supersized/3.2.7/slideshow/theme/supersized.shutter.css">
+
+<!-- FancyBox -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.min.css">
+
+<!-- Font Icons -->
+<link href="//cdn.jsdelivr.net/fontawesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Responsive -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/2.3.0/css/bootstrap-responsive.min.css">
+<%= stylesheet_link_tag "responsive" %>
+
+<!-- Google Font -->
+<link href='//fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
+
+<!-- Fav Icon -->
+<link rel="shortcut icon" href="#">
+
+<link rel="apple-touch-icon" href="#">
+<link rel="apple-touch-icon" sizes="114x114" href="#">
+<link rel="apple-touch-icon" sizes="72x72" href="#">
+<link rel="apple-touch-icon" sizes="144x144" href="#">
+
+<!-- Modernizr -->
+<script src="//cdn.jsdelivr.net/modernizr/2.8.3/modernizr.min.js"></script>
+
+<!-- Analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'Insert Your Code']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('' == document.location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- End Analytics -->
+
+</head>
+<body>
+
+<%= yield %>
+
+<!-- Socialize -->
+<div id="social-area" class="page">
+	<div class="container">
+    	<div class="row">
+            <div class="span12">
+                <nav id="social">
+                    <ul>
+                        <li><a href="//twitter.com/Bluxart" title="Follow Me on Twitter" target="_blank"><span><i class="fa fa-twitter"></i></span></a></li>
+                        <li><a href="//www.facebook.com/Bluxart" title="Follow Me on Facebook" target="_blank"><span><i class="fa fa-facebook"></i></span></a></li>
+                        <li><a href="//plus.google.com/105500420878314068694" title="Follow Me on Google Plus" target="_blank"><span><i class="fa fa-google-plus"></i></span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Socialize -->
+
+<!-- Footer -->
+<footer class="footer">
+	<p class="credits">no &copy; 2015 Andy Mental | <b>REALITY</b> is always controlled by the people who are most <b>INSANE<b>.</p>
+</footer>
+<!-- End Footer -->
+
+<!-- Back To Top -->
+<a id="back-to-top" href="#">
+	<i class="fa fa-angle-double-up"></i>
+</a>
+<!-- End Back to Top -->
+
+
+<!-- Js -->
+<script src="//cdn.jsdelivr.net/jquery/2.2.0/jquery.min.js"></script> <!-- jQuery Core -->
+<script src="//cdn.jsdelivr.net/bootstrap/2.3.0/js/bootstrap.min.js"></script> <!-- Bootstrap -->
+<script src="//cdn.jsdelivr.net/jquery.waypoints/2.0.5/waypoints.min.js"></script> <!-- WayPoints -->
+<script src="//cdn.jsdelivr.net/jquery.waypoints/2.0.5/shortcuts/sticky-elements/waypoints-sticky.min.js"></script> <!-- Waypoints for Header -->
+<script src="//cdn.jsdelivr.net/isotope/2.2.2/isotope.pkgd.min.js"></script> <!-- Isotope Filter -->
+<script src="//cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
+<script src="//cdn.jsdelivr.net/fancybox/2.1.5/helpers/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
+<%= javascript_include_tag "plugins" %> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
+<%= javascript_include_tag "main" %> <!-- Default JS -->
+<script src="/assets/jquery.perspectiveRules.js"></script>
+<script>
+    $(".movement_main").perspectiveRules({smoothingMultiplier: 1.5,
+        directions: [ -1, 1, 1, 1, 1, 1, 1, 1 ]});
+    $(".movement_secondary").perspectiveRules({directions: [ 1, 1, -1, 1, 1, 1, 1, 1 ]});
+</script>
+<!-- End Js -->
+</body>
+</html>
