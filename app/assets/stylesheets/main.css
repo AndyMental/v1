@@ -307,8 +307,7 @@ h3.spec {
 	height: 100%;
 	z-index: inherit;
 	overflow: hidden;
-	background-image: 
-    url(/assets/logo_main.png)
+	background-image: image-url('logo_main.png');
 }
 
 #home-slider .centered {
@@ -517,7 +516,7 @@ header #logo {
 }
 
 header #logo a {
-	background: url(/assets/logo.png) no-repeat;
+	background: image-url('logo.png') no-repeat;
 	width: 96px;
 	height: 30px;
 	text-indent: -9999px;
@@ -580,7 +579,7 @@ nav#menu #menu-nav li a:hover {
 }
 
 .menu-nav {
-	background:url(/assets/menu-mobile.png) 0 0 no-repeat;
+	background:image-url('menu-mobile.png') 0 0 no-repeat;
 	width: 16px;
 	height: 16px;
 	display: block;
