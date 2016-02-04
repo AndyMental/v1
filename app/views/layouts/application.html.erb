@@ -71,10 +71,32 @@
 </script>
 <!-- End Analytics -->
 
+<!-- Js -->
+<script src="//cdn.jsdelivr.net/jquery/2.2.0/jquery.min.js"></script> <!-- jQuery Core -->
+<script src="//cdn.jsdelivr.net/bootstrap/2.3.0/js/bootstrap.min.js"></script> <!-- Bootstrap -->
+<script src="//cdn.jsdelivr.net/jquery.waypoints/2.0.5/waypoints.min.js"></script> <!-- WayPoints -->
+<script src="//cdn.jsdelivr.net/jquery.waypoints/2.0.5/shortcuts/sticky-elements/waypoints-sticky.min.js"></script> <!-- Waypoints for Header -->
+<script src="//cdn.jsdelivr.net/isotope/2.2.2/isotope.pkgd.min.js"></script> <!-- Isotope Filter -->
+<script src="//cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
+<script src="//cdn.jsdelivr.net/fancybox/2.1.5/helpers/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
+<%= javascript_include_tag "plugins" %> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
+<%= javascript_include_tag "main" %> <!-- Default JS -->
+<%= javascript_include_tag "jquery.perspectiveRules" %>
+<script>
+    $(".movement_main").perspectiveRules({smoothingMultiplier: 1.5,
+        directions: [ -1, 1, 1, 1, 1, 1, 1, 1 ]});
+    $(".movement_secondary").perspectiveRules({directions: [ 1, 1, -1, 1, 1, 1, 1, 1 ]});
+</script>
+<!-- End Js -->
+
 </head>
 <body>
+    
+<!-- YIELD -->
 
 <%= yield %>
+
+<!-- End YIELD -->
 
 <!-- Socialize -->
 <div id="social-area" class="page">
@@ -83,9 +105,10 @@
             <div class="span12">
                 <nav id="social">
                     <ul>
-                        <li><a href="//twitter.com/Bluxart" title="Follow Me on Twitter" target="_blank"><span><i class="fa fa-twitter"></i></span></a></li>
-                        <li><a href="//www.facebook.com/Bluxart" title="Follow Me on Facebook" target="_blank"><span><i class="fa fa-facebook"></i></span></a></li>
-                        <li><a href="//plus.google.com/105500420878314068694" title="Follow Me on Google Plus" target="_blank"><span><i class="fa fa-google-plus"></i></span></a></li>
+                        <li><a href="//twitter.com/andyismental" title="Follow Me on Twitter" target="_blank"><span><i class="fa fa-twitter"></i></span></a></li>
+                        <li><a href="//www.facebook.com/andy.is.mental" title="Follow Me on Facebook" target="_blank"><span><i class="fa fa-facebook"></i></span></a></li>
+                        <li><a href="//plus.google.com/115156633956760976510" title="Follow Me on Google Plus" target="_blank"><span><i class="fa fa-google-plus"></i></span></a></li>
+                        <li><a href="//www.youtube.com/channel/UC716qRFfvZK56CmBYhtOnfw" title="Follow Me on Youtube" target="_blank"><span><i class="fa fa-youtube"></i></span></a></li>
                     </ul>
                 </nav>
             </div>
@@ -105,24 +128,5 @@
 	<i class="fa fa-angle-double-up"></i>
 </a>
 <!-- End Back to Top -->
-
-
-<!-- Js -->
-<script src="//cdn.jsdelivr.net/jquery/2.2.0/jquery.min.js"></script> <!-- jQuery Core -->
-<script src="//cdn.jsdelivr.net/bootstrap/2.3.0/js/bootstrap.min.js"></script> <!-- Bootstrap -->
-<script src="//cdn.jsdelivr.net/jquery.waypoints/2.0.5/waypoints.min.js"></script> <!-- WayPoints -->
-<script src="//cdn.jsdelivr.net/jquery.waypoints/2.0.5/shortcuts/sticky-elements/waypoints-sticky.min.js"></script> <!-- Waypoints for Header -->
-<script src="//cdn.jsdelivr.net/isotope/2.2.2/isotope.pkgd.min.js"></script> <!-- Isotope Filter -->
-<script src="//cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
-<script src="//cdn.jsdelivr.net/fancybox/2.1.5/helpers/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
-<%= javascript_include_tag "plugins" %> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
-<%= javascript_include_tag "main" %> <!-- Default JS -->
-<script src="/assets/jquery.perspectiveRules.js"></script>
-<script>
-    $(".movement_main").perspectiveRules({smoothingMultiplier: 1.5,
-        directions: [ -1, 1, 1, 1, 1, 1, 1, 1 ]});
-    $(".movement_secondary").perspectiveRules({directions: [ 1, 1, -1, 1, 1, 1, 1, 1 ]});
-</script>
-<!-- End Js -->
 </body>
 </html>
