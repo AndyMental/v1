@@ -148,3 +148,8 @@
 </div>
 </div>
 <!-- End Contact Section -->
+<script>
+    $(".movement_main").perspectiveRules({smoothingMultiplier: 1.5,
+        directions: [ -1, 1, 1, 1, 1, 1, 1, 1 ]});
+    $(".movement_secondary").perspectiveRules({directions: [ 1, 1, -1, 1, 1, 1, 1, 1 ]});
+</script>
