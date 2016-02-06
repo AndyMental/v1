@@ -26,5 +26,6 @@ module V1
     # Enable the asset pipeline
     config.assets.enabled = true
     config.assets.digest = true
+    config.serve_static_assets = true
   end
 end
